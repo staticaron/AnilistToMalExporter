@@ -108,7 +108,7 @@ def convert(anilist_username:str) -> None:
 
             print("ADDED : {} > {} ".format(anime_status, anime_title))
 
-    with open("export/MAL.xml", "wb") as xml_in:
+    with open("{}_MAL.xml".format(anilist_username), "wb") as xml_in:
         
         tree = ET.ElementTree(root)
         tree.write(xml_in)
