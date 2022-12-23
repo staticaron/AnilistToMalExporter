@@ -3,7 +3,6 @@ import requests
 import xml.etree.ElementTree as ET
 
 ANILIST_BASE = "https://graphql.anilist.co/"
-FINDMYLIST_BASE = "https://find-my-anime.dtimur.de/api?id={id}&provider=MyAnimeList&includeAdult=true"
 
 status_mappings = {
     "CURRENT" : "Watching",
